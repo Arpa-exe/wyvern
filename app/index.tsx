@@ -1,24 +1,33 @@
-import { Text, View } from "react-native";
 import { Image } from "@/components/ui/image"
 import { Box } from "@/components/ui/box"
+import { Text } from "@/components/ui/text"
+import { HStack } from "@/components/ui/hstack"
+import { Button, ButtonText, ButtonSpinner  } from "@/components/ui/button"
+import colors from "tailwindcss/colors"
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
+    <HStack 
+      className="flex-1 justify-between gap-6 bg-primary-100"
     >
-      <Box className="bg-primary-500 p-5 h-[200px] w-[300px]">
+      <Text 
+        className="" 
+        bold={true}
+        size="4xl"
+      >
+        Wyvern
+      </Text>
+      <Button size="md" variant="solid" action="primary">
+      <ButtonSpinner color={colors.gray[400]} />
+      <ButtonText>Hello World!</ButtonText>
+    </Button>
+      <Text className="text-2xl font-bold text-gray-800 mb-4">Welcome to 5e Tool</Text>
         <Image
-          size="md"
-          style={{width: 40, height: 40}}
+          size="full"
+          className="w-full h-full aspect-[320/208]"
           source={require('../assets/images/5eLogo.svg')}
           alt="5e Logo"
         />
-      </Box>
-    </View>
+    </HStack>
   );
 }
