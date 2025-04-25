@@ -582,8 +582,8 @@ html :is(.m-0) {
 html :is(.m-1) {
   margin: 0.25rem;
 }
-html :is(.m-2) {
-  margin: 0.5rem;
+html :is(.m-4) {
+  margin: 1rem;
 }
 html :is(.mx-0) {
   margin-left: 0px;
@@ -613,10 +613,6 @@ html :is(.my-1) {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
-html :is(.my-7) {
-  margin-top: 1.75rem;
-  margin-bottom: 1.75rem;
-}
 html :is(.mb-1) {
   margin-bottom: 0.25rem;
 }
@@ -637,9 +633,6 @@ html :is(.mb-5) {
 }
 html :is(.mb-6) {
   margin-bottom: 1.5rem;
-}
-html :is(.ml-1) {
-  margin-left: 0.25rem;
 }
 html :is(.mr-1) {
   margin-right: 0.25rem;
@@ -887,6 +880,9 @@ html :is(.w-full) {
 html :is(.w-px) {
   width: 1px;
 }
+html :is(.w-screen) {
+  width: 100vw;
+}
 html :is(.min-w-0) {
   min-width: 0px;
 }
@@ -924,6 +920,9 @@ html :is(.flex-1) {
   flex: 1 1 0%;
 }
 html :is(.flex-grow) {
+  flex-grow: 1;
+}
+html :is(.grow) {
   flex-grow: 1;
 }
 html :is(.basis-\[10\%\]) {
@@ -1010,6 +1009,9 @@ html :is(.justify-center) {
 html :is(.justify-between) {
   justify-content: space-between;
 }
+html :is(.justify-around) {
+  justify-content: space-around;
+}
 html :is(.gap-0) {
   gap: 0px;
 }
@@ -1049,6 +1051,9 @@ html :is(.gap-x-2) {
 }
 html :is(.gap-y-6) {
   row-gap: 1.5rem;
+}
+html :is(.place-self-end) {
+  place-self: end;
 }
 html :is(.self-start) {
   align-self: flex-start;
@@ -1170,6 +1175,9 @@ html :is(.border-t-border-300) {
 html :is(.bg-background-0) {
   background-color: var(--color-background-0);
 }
+html :is(.bg-background-100) {
+  background-color: var(--color-background-100);
+}
 html :is(.bg-background-200) {
   background-color: var(--color-background-200);
 }
@@ -1246,6 +1254,9 @@ html :is(.bg-success-500) {
 }
 html :is(.bg-success-700) {
   background-color: var(--color-success-700);
+}
+html :is(.bg-tertiary-100) {
+  background-color: var(--color-tertiary-100);
 }
 html :is(.bg-transparent) {
   background-color: transparent;
@@ -1548,11 +1559,11 @@ html :is(.text-info-700) {
 html :is(.text-info-800) {
   color: var(--color-info-800);
 }
+html :is(.text-primary-100) {
+  color: var(--color-primary-100);
+}
 html :is(.text-primary-600) {
   color: var(--color-primary-600);
-}
-html :is(.text-primary-700) {
-  color: var(--color-primary-700);
 }
 html :is(.text-secondary-600) {
   color: var(--color-secondary-600);
@@ -1793,14 +1804,6 @@ html :is(.group\/button:hover .group-hover\/button\:text-success-600) {
 
 html :is(.group\/button:hover .group-hover\/button\:text-typography-0) {
   color: var(--color-typography-0);
-}
-
-html :is(.group\/link:hover .group-hover\/link\:text-primary-600) {
-  color: var(--color-primary-600);
-}
-
-html :is(.group\/pressed:hover .group-hover\/pressed\:text-primary-700) {
-  color: var(--color-primary-700);
 }
 
 html :is(.group\/button:hover .group-hover\/button\:underline) {

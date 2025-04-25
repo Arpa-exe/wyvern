@@ -14,7 +14,7 @@ const SplashScreenWithLeftBackground = () => {
   const { colorScheme } = useColorScheme();
   return (
     <VStack
-      className="w-full max-w-[440px] items-center h-full justify-center"
+      className="w-full max-w-[440px] items-center h-full justify-center bg-color-secondary-0"
       space="lg"
     >
       {colorScheme === "dark" ? (
